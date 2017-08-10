@@ -1,0 +1,16 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "Frontend Events Calendar",
+  "repository": "web-standards-ru/calendar",
+  "scripts": {
+    "start": "node scripts/generateIcal.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ical-generator": "^0.2.9",
+    "js-yaml": "^3.7.0",
+    "pify": "^2.3.0"
+  }
+}
