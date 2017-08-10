@@ -9,7 +9,7 @@
 1. Создайте в папке [events](https://github.com/web-standards-ru/calendar/tree/master/events) файл `yyyy-mm-dd-name.yml`.
 2. Отправьте пулреквест и будьте готовы к правкам.
 
-- Файл можно создать прямо на Гитхабе: _Creat new file_ над списком и дальше в пулреквест.
+- Файл можно создать прямо на Гитхабе: [create new file](https://github.com/web-standards-ru/calendar/new/master/events) и дальше в пулреквест.
 - Название события укажите латиницей, строчными буквами. Называйте конференции единообразно.
 
 ## Формат файла
