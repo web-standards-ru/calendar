@@ -24,7 +24,7 @@ function prepareEvent(event) {
 
 function generateCalendar(events) {
     const cal = ical({
-        domain: 'http://web-standards-ru.github.io/calendar',
+        domain: 'https://web-standards.ru/',
         prodId: {
             company: 'web-standards',
             product: 'calendar',
