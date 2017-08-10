@@ -1,7 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "start": "node scripts/generateCalendar.js"
+    "start": "npm run generate && npm run publish",
+    "generate": "node scripts/generateCalendar.js",
+    "publish": "rsync dist/calendar.ics web-standards.ru:/var/www/web-standards.ru/html"
   },
   "devDependencies": {
     "ical-generator": "^0.2.9",
