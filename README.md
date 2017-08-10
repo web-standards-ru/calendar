@@ -2,7 +2,9 @@
 
 Конференции, встречи и другие события по фронтенду во всём мире в одном календаре.
 
-Адрес календаря: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics)
+Адрес календаря: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics).
+
+Правки, замечания и идеи по развитию календаря [в ишьях](https://github.com/web-standards-ru/calendar/issues).
 
 ## Добавление события
 
@@ -21,8 +23,14 @@ city: city, country
 link: url
 ```
 
-- Если конференция длится два дня, то укажите диапазон.
-- Названия городов и стран указывайте кириллицей.
+- Если конференция длится больше одного дня, то укажите даты через дефис.
+- Названия городов и стран записывайте кириллицей.
+
+## Сборка событий
+
+- `npm run generate` для сборки
+- `npm run publish` для публикации
+- `npm start` для сборки и публикации
 
 ---
 [Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редакторы [Вадим Макеев](https://github.com/pepelsbey) и [Евгений Жлобо](https://github.com/ezhlobo). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
