@@ -3,7 +3,7 @@
   "scripts": {
     "start": "npm run generate && npm run publish",
     "generate": "node scripts/generateCalendar.js",
-    "publish": "rsync dist/calendar.ics web-standards.ru:/var/www/web-standards.ru/html"
+    "publish": "git add dist/calendar.ics && git commit -m 'Публикует календарь' && git push"
   },
   "devDependencies": {
     "ical-generator": "^0.2.9",
