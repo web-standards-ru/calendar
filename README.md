@@ -4,7 +4,12 @@
 
 Адрес календаря: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics).
 
-Правки, замечания и идеи по развитию календаря [в ишьях](https://github.com/web-standards-ru/calendar/issues).
+Правки, замечания и идеи по развитию календаря — [в ишьях](https://github.com/web-standards-ru/calendar/issues).
+
+## Как подписаться
+
+- [Инструкция для macOS](https://support.apple.com/ru-ru/HT202361)
+- [Инструкция для Google Calendar](https://support.google.com/calendar/answer/37100)
 
 ## Добавление события
 
