@@ -8,6 +8,7 @@
   "devDependencies": {
     "ical-generator": "^0.2.9",
     "js-yaml": "^3.7.0",
+    "moment-timezone": "^0.5.13",
     "pify": "^3.0.0"
   }
 }
