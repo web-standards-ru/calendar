@@ -2,7 +2,9 @@
 
 Конференции, встречи и другие события по фронтенду во всём мире в одном календаре.
 
-Адрес календаря: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics).
+Адрес календаря .ics: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics).
+
+Адрес календаря UI: [Google Calendar](https://calendar.google.com/calendar/embed?src=dnM0czZrdjluZWFtb3RhNm9jZjYxZTgzZzZxYWN2NTVAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20).
 
 Правки, замечания и идеи по развитию календаря — [в ишьях](https://github.com/web-standards-ru/calendar/issues).
 
