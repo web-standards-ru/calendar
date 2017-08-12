@@ -16,8 +16,7 @@ function prepareEvent(event) {
         end: event.dateEnd,
         summary: event.name,
         location: event.city,
-        url: event.link,
-        floating: true
+        url: event.link
     };
 }
 

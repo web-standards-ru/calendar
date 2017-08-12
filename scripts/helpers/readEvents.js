@@ -8,6 +8,7 @@ const readFile = pify(fs.readFile);
 
 const DATE_REGEX = /(\d{1,2})\.(\d{1,2})\.(\d{4})-?(\d{1,2})?\.?(\d{1,2})?\.?(\d{4})?/;
 const ONE_HOUR = 60*60*1000;
+const MOSCOW_TIMEZONE_OFFSET = ONE_HOUR * 3;
 
 function parseDate(dateStr) {
     const [
@@ -20,8 +21,8 @@ function parseDate(dateStr) {
         yearEnd = yearStart
     ] = DATE_REGEX.exec(dateStr) || [];
     return {
-        dateStart: new Date(Date.UTC(yearStart, monthStart-1, dayStart)),
-        dateEnd: new Date(Date.UTC(yearEnd, monthEnd-1, dayEnd, 23, 59))
+        dateStart: new Date(Date.UTC(yearStart, monthStart-1, dayStart) - MOSCOW_TIMEZONE_OFFSET),
+        dateEnd: new Date(Date.UTC(yearEnd, monthEnd-1, dayEnd, 23, 59) - MOSCOW_TIMEZONE_OFFSET)
     };
 }
 
