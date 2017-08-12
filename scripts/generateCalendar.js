@@ -17,7 +17,8 @@ function prepareEvent(event) {
         summary: event.name,
         location: event.city,
         url: event.link,
-        floating: true
+        floating: true,
+        allDay: true
     };
 }
 
