@@ -3,7 +3,7 @@
   "scripts": {
     "start": "npm run generate && npm run publish",
     "generate": "node scripts/generateCalendar.js",
-    "publish": "git add dist/calendar.ics && git commit -m 'Публикует календарь' && git push"
+    "publish": "git add events/*.yml dist/calendar.ics && git commit -m 'Публикует календарь' && git push"
   },
   "devDependencies": {
     "geo-tz": "^3.3.3",
