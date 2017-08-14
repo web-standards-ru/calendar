@@ -36,7 +36,6 @@ function generateCalendar(events) {
             product: 'calendar',
             language: 'RU'
         },
-        timezone: 'Europe/Moscow',
         events: events
     });
 
