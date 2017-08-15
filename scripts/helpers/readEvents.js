@@ -6,6 +6,7 @@ const pify = require('pify');
 const yaml = require('js-yaml');
 const moment = require('moment-timezone');
 const getTimezone = require('./getTimezone');
+const toNumberOrUndefined = require('./toNumberOrUndefined');
 
 const readDir = pify(fs.readdir);
 const readFile = pify(fs.readFile);
@@ -42,11 +43,11 @@ function parseDate(dateStr, timeStr, city) {
         dayEnd = dayStart,
         monthEnd = monthStart,
         yearEnd = yearStart
-    ] = dateParts;
+    ] = dateParts.map(toNumberOrUndefined);
 
     result = {
-        dateStart: new Date(Date.UTC(yearStart, monthStart-1, dayStart)),
-        dateEnd: new Date(Date.UTC(yearEnd, monthEnd-1, dayEnd, 23, 59)),
+        dateStart: new Date(Date.UTC(yearStart, monthStart - 1, dayStart)),
+        dateEnd: new Date(Date.UTC(yearEnd, monthEnd - 1, dayEnd + 1)),
         withTime: false,
     };
 
@@ -67,9 +68,9 @@ function parseDate(dateStr, timeStr, city) {
             minutesFrom,
             hoursTo,
             minutesTo
-        ] = timeParts;
-        const timestampStart = Date.UTC(yearStart, monthStart-1, dayStart, hoursFrom, minutesFrom);
-        const timestampEnd = Date.UTC(yearEnd, monthEnd-1, dayEnd, hoursTo, minutesTo);
+        ] = timeParts.map(toNumberOrUndefined);
+        const timestampStart = Date.UTC(yearStart, monthStart - 1, dayStart, hoursFrom, minutesFrom);
+        const timestampEnd = Date.UTC(yearEnd, monthEnd - 1, dayEnd, hoursTo, minutesTo);
         const timezone = moment.tz.zone(timezoneName);
 
         result = {
