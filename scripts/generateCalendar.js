@@ -18,7 +18,7 @@ function prepareEvent(event) {
         end: event.dateEnd,
         summary: event.name,
         location: event.city,
-        url: event.link,
+        description: event.link,
     };
 
     if (!event.withTime) {
