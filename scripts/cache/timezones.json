@@ -2,5 +2,6 @@
     "Москва, Россия": "Europe/Moscow",
     "Санкт-Петербург, Россия": "Europe/Moscow",
     "Киев, Украина": "Europe/Kiev",
-    "Нижний Новгород, Россия": "Europe/Moscow"
+    "Нижний Новгород, Россия": "Europe/Moscow",
+    "Таллин, Эстония": "Europe/Tallinn"
 }
