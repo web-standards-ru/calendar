@@ -10,6 +10,7 @@
 
 - [Инструкция для macOS](https://support.apple.com/ru-ru/HT202361)
 - [Инструкция для Google Calendar](https://support.google.com/calendar/answer/37100)
+- [Инструкция для Яндекс.Календаря](https://yandex.ru/support/calendar-new/sync/import.html)
 
 ## Добавление события
 
