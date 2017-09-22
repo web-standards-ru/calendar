@@ -4,5 +4,6 @@
     "Киев, Украина": "Europe/Kiev",
     "Нижний Новгород, Россия": "Europe/Moscow",
     "Таллин, Эстония": "Europe/Tallinn",
-    "Ульяновск, Россия": "Europe/Ulyanovsk"
+    "Ульяновск, Россия": "Europe/Ulyanovsk",
+    "Одесса, Украина": "Europe/Kiev"
 }
