@@ -10,6 +10,7 @@
 
 - [Инструкция для macOS](https://support.apple.com/ru-ru/HT202361)
 - [Инструкция для Google Calendar](https://support.google.com/calendar/answer/37100)
+- [Инструкция для Яндекс.Календаря](https://yandex.ru/support/calendar-new/sync/import.html)
 
 ## Добавление события
 
@@ -18,17 +19,20 @@
 
 - Файл можно создать прямо на Гитхабе: [create new file](https://github.com/web-standards-ru/calendar/new/master/events) и дальше в пулреквест.
 - Название события укажите латиницей, строчными буквами. Называйте конференции единообразно.
+- Если событие длится больше одного дня, в названии файла укажите первый.
 
 ## Формат файла
 
 ```yml
 name: event
 date: dd.mm.yyyy[-dd.mm.yyyy]
+time: hh:mm-hh:mm
 city: city, country
 link: url
 ```
 
-- Если конференция длится больше одного дня, то укажите даты через дефис.
+- Если событие длится больше одного дня, то укажите даты через дефис.
+- Для событий на день или на вечер можно указать время начала и конца.
 - Названия городов и стран записывайте кириллицей.
 
 ## Сборка событий
@@ -38,4 +42,4 @@ link: url
 - `npm start` для сборки и публикации
 
 ---
-[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редакторы [Вадим Макеев](https://github.com/pepelsbey) и [Евгений Жлобо](https://github.com/ezhlobo). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
+[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редактор [Вадим Макеев](https://github.com/pepelsbey), разработка [Дмитрий Семиградский](https://github.com/Semigradsky) и [Андрей Волынкин](https://github.com/Avol-V). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).

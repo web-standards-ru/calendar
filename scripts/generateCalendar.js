@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs');
 const path = require('path');
 const pify = require('pify');
@@ -10,15 +12,20 @@ const PATH_CALENDAR = path.resolve(__dirname, '../dist/calendar.ics');
 const writeFile = pify(fs.writeFile);
 
 function prepareEvent(event) {
-    return {
+    const data = {
         uid: event.uid,
         start: event.dateStart,
         end: event.dateEnd,
         summary: event.name,
         location: event.city,
-        url: event.link,
-        floating: true
+        description: event.link,
     };
+
+    if (!event.withTime) {
+        data.allDay = true;
+    }
+
+    return data;
 }
 
 function generateCalendar(events) {
@@ -35,10 +42,15 @@ function generateCalendar(events) {
     return writeFile(PATH_CALENDAR, cal);
 }
 
+function dropEventWithoutDateStart(event)
+{
+    return ('dateStart' in event);
+}
+
 readEvents(PATH_EVENTS).
-    then(events => events.map(prepareEvent)).
+    then(events => events.filter(dropEventWithoutDateStart).map(prepareEvent)).
     then(generateCalendar).
-    catch(err => {
-        console.log('error: ', err);
+    catch((error) => {
+        console.error(error);
         process.exit(1);
     });
