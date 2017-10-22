@@ -1,1 +1,3 @@
 /node_modules/
+.travis/deploy_key
+.travis/deploy_key.pub
