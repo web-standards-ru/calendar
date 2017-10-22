@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "test": "echo 'Skip Tests'",
     "start": "npm run generate && npm run publish",
     "generate": "node scripts/generateCalendar.js",
     "publish": "git add events/*.yml dist/calendar.ics && git commit -m 'Публикует календарь' && git push"
