@@ -8,7 +8,7 @@ git remote add origin https://wsd-bot:${GITHUB_TOKEN}@github.com/web-standards-r
 git checkout master
 
 echo "generate and publish calendar"
-npm run publish || exit 1
+npm start || exit 1
 
 echo "deploy calendar"
 scp ${TRAVIS_BUILD_DIR}/dist/calendar.ics web-standards.ru:
