@@ -6,6 +6,7 @@ git config user.name ${GITHUB_NAME}
 git remote rm origin
 git remote add origin https://wsd-bot:${GITHUB_TOKEN}@github.com/web-standards-ru/calendar.git
 git checkout master
+git branch -u origin/master
 
 echo "generate and publish calendar"
 npm start || exit 1
