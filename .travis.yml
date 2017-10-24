@@ -1,0 +1,21 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- '8'
+git:
+  depth: 3
+addons:
+  ssh_known_hosts:
+  - web-standards.ru
+  - wsd.events
+before_deploy:
+- .travis/set-up-ssh
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: "./.travis/publish"
+  on:
+    repo: web-standards-ru/calendar
+    condition: $(git cat-file -p HEAD | grep parent | wc -l) -gt 1
+    branch: master
