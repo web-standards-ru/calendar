@@ -14,6 +14,7 @@ const readFile = pify(fs.readFile);
 const DATE_REGEX = /(\d{1,2})\.(\d{1,2})\.(\d{4})(?:-(\d{1,2})\.(\d{1,2})\.(\d{4}))?/;
 const TIME_REGEX = /(\d\d?):(\d\d)-(\d\d?):(\d\d)/;
 const MILLISECONDS_IN_MINUTE = 60 * 1000;
+const ESCAPED_NUMBER_SIGNS_REGEXP = /\\#/g;
 
 /**
  * Parse date and time fields, using city to specify timezone.
@@ -98,7 +99,7 @@ function parseDate(dateStr, timeStr, city) {
  * @param {string} content Event file content.
  */
 function parseEvent(content) {
-    const data = yaml.safeLoad(content);
+    const data = unescapeYamlNumberSign(yaml.safeLoad(content));
     const assignData = (dateData) => Object.assign(
         data,
         dateData
@@ -135,6 +136,22 @@ function readEvents(folder) {
         .then(files => Promise.all(
             files.map(file => readEvent(path.resolve(folder, file)))
         ));
+}
+
+/**
+ * Unescape Number Sign (`#`) in YAML values.
+ *
+ * @param {{[key: string]: any}} yamlData Parsed YAML data.
+ * @returns {{[key: string]: any}}
+ */
+function unescapeYamlNumberSign(yamlData) {
+    for (const [key, value] of Object.entries(yamlData)) {
+        if (typeof value === 'string') {
+            yamlData[key] = value.replace(ESCAPED_NUMBER_SIGNS_REGEXP, '#');
+        }
+    }
+
+    return yamlData;
 }
 
 module.exports = readEvents;
