@@ -40,8 +40,7 @@ link: url
 ## Сборка событий
 
 - `npm run generate` для сборки
-- `npm run publish` для публикации
-- `npm start` для сборки и публикации
+- `npm start` для сборки (как шорткат)
 
 ---
 [Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редактор [Вадим Макеев](https://github.com/pepelsbey), разработка [Дмитрий Семиградский](https://github.com/Semigradsky) и [Андрей Волынкин](https://github.com/Avol-V). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
