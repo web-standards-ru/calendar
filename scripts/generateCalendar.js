@@ -7,7 +7,12 @@ const ical = require('ical-generator');
 const readEvents = require('./helpers/readEvents');
 
 const PATH_EVENTS = path.resolve(__dirname, '../events');
-const PATH_CALENDAR = path.resolve(__dirname, '../dist/calendar.ics');
+const PATH_DIST = path.resolve(__dirname, '../dist');
+const PATH_CALENDAR = path.resolve(PATH_DIST, 'calendar.ics');
+
+if (!fs.existsSync(PATH_DIST)){
+    fs.mkdirSync(PATH_DIST);
+}
 
 const writeFile = pify(fs.writeFile);
 
@@ -42,15 +47,14 @@ function generateCalendar(events) {
     return writeFile(PATH_CALENDAR, cal);
 }
 
-function dropEventWithoutDateStart(event)
-{
+function dropEventWithoutDateStart(event) {
     return ('dateStart' in event);
 }
 
-readEvents(PATH_EVENTS).
-    then(events => events.filter(dropEventWithoutDateStart).map(prepareEvent)).
-    then(generateCalendar).
-    catch((error) => {
+readEvents(PATH_EVENTS)
+    .then(events => events.filter(dropEventWithoutDateStart).map(prepareEvent))
+    .then(generateCalendar)
+    .catch((error) => {
         console.error(error);
         process.exit(1);
     });
