@@ -8,7 +8,6 @@ git:
 addons:
   ssh_known_hosts:
   - web-standards.ru
-  - wsd.events
 before_deploy:
 - .travis/set-up-ssh
 deploy:
@@ -17,5 +16,4 @@ deploy:
   script: "./.travis/publish"
   on:
     repo: web-standards-ru/calendar
-    condition: $(git cat-file -p HEAD | grep parent | wc -l) -gt 1
     branch: master
