@@ -1,5 +1,7 @@
 # Календарь событий по фронтенду
 
+[![Build Status](https://travis-ci.org/web-standards-ru/calendar.svg?branch=master)](https://travis-ci.org/web-standards-ru/calendar)
+
 Конференции, встречи и другие события по фронтенду во всём мире в одном календаре.
 
 Адрес календаря: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics).
