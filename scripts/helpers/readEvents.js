@@ -116,7 +116,7 @@ function parseEvent(content) {
  */
 function readEvent(fullPath) {
     const uid = path.basename(fullPath, '.yml');
-     const assignUid = (data) => Object.assign(
+    const assignUid = (data) => Object.assign(
         data,
         { uid }
     );
