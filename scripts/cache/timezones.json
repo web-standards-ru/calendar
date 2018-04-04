@@ -10,5 +10,11 @@
     "Екатеринбург, Россия": "Asia/Yekaterinburg",
     "Новосибирск, Россия": "Asia/Novosibirsk",
     "Краснодар, Россия": "Europe/Moscow",
-    "Тольятти, Россия": "Europe/Samara"
+    "Тольятти, Россия": "Europe/Samara",
+    "Харьков, Украина": "Europe/Kiev",
+    "Ростов-на-Дону, Россия": "Europe/Moscow",
+    "Нью-Йорк, США": "America/New_York",
+    "Нюрнберг, Германия": "Europe/Berlin",
+    "Челябинск, Россия": "Asia/Yekaterinburg",
+    "Newcastle upon Tyne, UK": "Europe/London"
 }
