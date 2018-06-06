@@ -3,7 +3,8 @@
   "scripts": {
     "test": "echo 'Skip Tests'",
     "start": "npm run generate",
-    "generate": "node scripts/generateCalendar.js"
+    "generate": "node scripts/generateCalendar.js",
+    "test": "yamllint events/*"
   },
   "devDependencies": {
     "geo-tz": "^3.3.3",
@@ -12,6 +13,7 @@
     "moment-timezone": "^0.5.13",
     "mutex-js": "^1.1.5",
     "node-geocoder": "^3.19.0",
-    "pify": "^3.0.0"
+    "pify": "^3.0.0",
+    "yaml-lint": "^1.2.3"
   }
 }
