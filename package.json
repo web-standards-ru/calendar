@@ -1,10 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "test": "echo 'Skip Tests'",
     "start": "npm run generate",
     "generate": "node scripts/generateCalendar.js",
-    "test": "yamllint events/*"
+    "test": "npm run lint",
+    "lint": "yamllint events/*"
   },
   "devDependencies": {
     "geo-tz": "^3.3.3",
