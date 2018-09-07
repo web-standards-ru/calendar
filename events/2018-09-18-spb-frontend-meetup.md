@@ -1,4 +1,4 @@
-name: Встреча SPB Frontend, сентябрь 2018
+name: Встреча SPB Frontend
 date: 18.09.2018
 time: 19:00-21:00
 city: Санкт-Петербург, Россия
