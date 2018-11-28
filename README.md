@@ -17,7 +17,7 @@
 
 ## Добавление события
 
-1. Создайте в папке [events](https://github.com/web-standards-ru/calendar/tree/master/events) файл `yyyy-mm-dd-name.yml`.
+1. Создайте в папке [events](https://github.com/web-standards-ru/calendar/tree/master/events) файл `yyyy-mm-dd-event-name.yml`.
 2. Отправьте пулреквест, открытый к правкам (галочка _allow edits from maintainers_).
 
 - Файл можно создать прямо на Гитхабе: [create new file](https://github.com/web-standards-ru/calendar/new/master/events) и дальше в пулреквест.
@@ -28,14 +28,14 @@
 
 ```yml
 name: event
-date: dd.mm.yyyy[-dd.mm.yyyy]
+date: dd.mm.yyyy
 time: hh:mm-hh:mm
 city: city, country
 link: url
 ```
 
-- Если событие длится больше одного дня, то укажите даты через дефис.
-- Для событий на день или на вечер можно указать время начала и конца.
+- Если событие многодневное, добавьте дату завершения через дефис `dd.mm.yyyy-dd.mm.yyyy`.
+- Для коротких событий на несколько часов можно указать время начала и конца.
 - Названия городов и стран записывайте кириллицей.
 
 ## Сборка событий
