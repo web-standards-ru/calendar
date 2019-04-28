@@ -2,4 +2,3 @@
 /dist/
 .travis/deploy_key
 .travis/deploy_key.pub
-.DS_Store
