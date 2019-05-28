@@ -4,4 +4,4 @@ echo "generate and publish calendar"
 npm run generate || exit 1
 
 echo "deploy calendar"
-scp ${TRAVIS_BUILD_DIR}/dist/calendar.ics web-standards.ru:
+scp ${TRAVIS_BUILD_DIR}/dist/calendar.{ics,json} web-standards.ru:

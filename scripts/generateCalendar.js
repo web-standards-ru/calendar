@@ -8,7 +8,8 @@ const readEvents = require('./helpers/readEvents');
 
 const PATH_EVENTS = path.resolve(__dirname, '../events');
 const PATH_DIST = path.resolve(__dirname, '../dist');
-const PATH_CALENDAR = path.resolve(PATH_DIST, 'calendar.ics');
+const PATH_ICAL_CALENDAR = path.resolve(PATH_DIST, 'calendar.ics');
+const PATH_JSON_CALENDAR = path.resolve(PATH_DIST, 'calendar.json');
 
 if (!fs.existsSync(PATH_DIST)){
     fs.mkdirSync(PATH_DIST);
@@ -44,7 +45,10 @@ function generateCalendar(events) {
         events: events
     });
 
-    return writeFile(PATH_CALENDAR, cal);
+    return Promise.all([
+        writeFile(PATH_ICAL_CALENDAR, cal),
+        writeFile(PATH_JSON_CALENDAR, JSON.stringify(events)),
+    ]);
 }
 
 function dropEventWithoutDateStart(event) {
