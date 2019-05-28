@@ -33,5 +33,11 @@
     "Черновцы": "Europe/Kiev",
     "София": "Europe/Sofia",
     "Казань": "Europe/Moscow",
-    "Донецк": "Europe/Kiev"
+    "Донецк": "Europe/Kiev",
+    "Симферополь": "Europe/Simferopol",
+    "Гомель": "Europe/Minsk",
+    "Лимассол": "Asia/Nicosia",
+    "Днепр": "Europe/Kiev",
+    "Нур-Султан": "Asia/Almaty",
+    "Барселона": "Europe/Madrid"
 }
