@@ -8,7 +8,8 @@ const readEvents = require('./helpers/readEvents');
 
 const PATH_EVENTS = path.resolve(__dirname, '../events');
 const PATH_DIST = path.resolve(__dirname, '../dist');
-const PATH_CALENDAR = path.resolve(PATH_DIST, 'calendar.ics');
+const PATH_ICAL_CALENDAR = path.resolve(PATH_DIST, 'calendar.ics');
+const PATH_JSON_CALENDAR = path.resolve(PATH_DIST, 'calendar.json');
 
 if (!fs.existsSync(PATH_DIST)){
     fs.mkdirSync(PATH_DIST);
@@ -33,7 +34,7 @@ function prepareEvent(event) {
     return data;
 }
 
-function generateCalendar(events) {
+function generateICalCalendar(events) {
     const cal = ical({
         domain: 'https://web-standards.ru/',
         prodId: {
@@ -44,7 +45,11 @@ function generateCalendar(events) {
         events: events
     });
 
-    return writeFile(PATH_CALENDAR, cal);
+    return writeFile(PATH_ICAL_CALENDAR, cal);
+}
+
+function generateJSONCalendar(events) {
+    return writeFile(PATH_JSON_CALENDAR, JSON.stringify(events));
 }
 
 function dropEventWithoutDateStart(event) {
@@ -53,7 +58,7 @@ function dropEventWithoutDateStart(event) {
 
 readEvents(PATH_EVENTS)
     .then(events => events.filter(dropEventWithoutDateStart).map(prepareEvent))
-    .then(generateCalendar)
+    .then(data => Promise.all[generateICalCalendar(data), generateJSONCalendar(data)])
     .catch((error) => {
         console.error(error);
         process.exit(1);
