@@ -34,7 +34,7 @@ function prepareEvent(event) {
     return data;
 }
 
-function generateCalendar(events) {
+function generateICalCalendar(events) {
     const cal = ical({
         domain: 'https://web-standards.ru/',
         prodId: {
@@ -45,10 +45,11 @@ function generateCalendar(events) {
         events: events
     });
 
-    return Promise.all([
-        writeFile(PATH_ICAL_CALENDAR, cal),
-        writeFile(PATH_JSON_CALENDAR, JSON.stringify(events)),
-    ]);
+    return writeFile(PATH_ICAL_CALENDAR, cal);
+}
+
+function generateJSONCalendar(events) {
+    return writeFile(PATH_JSON_CALENDAR, JSON.stringify(events));
 }
 
 function dropEventWithoutDateStart(event) {
@@ -57,7 +58,7 @@ function dropEventWithoutDateStart(event) {
 
 readEvents(PATH_EVENTS)
     .then(events => events.filter(dropEventWithoutDateStart).map(prepareEvent))
-    .then(generateCalendar)
+    .then(data => Promise.all[generateICalCalendar(data), generateJSONCalendar(data)])
     .catch((error) => {
         console.error(error);
         process.exit(1);
