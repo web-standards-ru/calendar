@@ -2,14 +2,14 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-- '8'
+- '12'
 git:
   depth: 3
 addons:
   ssh_known_hosts:
   - web-standards.ru
 before_deploy:
-- .travis/set-up-ssh
+- ".travis/set-up-ssh"
 deploy:
   skip_cleanup: true
   provider: script
@@ -17,3 +17,6 @@ deploy:
   on:
     repo: web-standards-ru/calendar
     branch: master
+env:
+  global:
+    secure: c71i7SxUweWDK3gUFtrtWzt77MxDVAohrUrnYMNdcz5G5cQAe+DfrIVBRyGoJX9VVKs8T5KSVbHI8WRBKh8ACK+bZPvD7QrreAFBD6MKWioVO0WnlVjkGViszo4ozA/ED1NLFD0tm8LmTJcjRPSiu2AIE40pGr7D7aN/zVKniW5tvyQT4J14HnxSfX7X1eG+wKVb2cNcnGTYamZDLUq6QF22HERUfAvIvMavVAyrbt1qHms7nxZMjCFbQYV6fz85HQeX7Y++Ek94UMU7GdqLgfbTHHAwk5ztzA8pq9mVed/REpL+yVMJB5MpV9yJKFO5ZGFgoBPbAf1tgID/GDKRKI/1npaOIDd6IIBml+XgLJzRSxvVjhzZV5EEFKxGh1GcHjPPnIabs+3Wwiaiip1myEn2kJE0b1PDyTVObEzambBB939OQnvbjmst8Ucq/BK10e5TfqEa9D9DM2DJSM6nzZ+e8yUn7t2fi/yXVfSitCYQT+mY/N4ILmNL38a+fXPgn4Er2t9zCBtUQABsviwdDtGO5AkhvawMuWzLJZ5MY82gftqypHxDuHtH1fAD0dAQ3HPdRojcmm4t8gi1p3TBuj+cgpzmxHeBn4SMOJuw3AlSxd32B2wc23P7n6o+owApkSaH424X+2TUndbiGQ1aI8uHCw1SVTR06KNDMP7zvic=
