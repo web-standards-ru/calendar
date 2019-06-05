@@ -14,7 +14,8 @@
 - [Инструкция для Google Calendar](https://support.google.com/calendar/answer/37100)
 - [Инструкция для Яндекс.Календаря](https://yandex.ru/support/calendar/common/create.html?lang=ru#subscribe)
 - [Инструкция для Outlook](https://support.office.com/ru-ru/article/%D0%98%D0%BC%D0%BF%D0%BE%D1%80%D1%82-%D0%BA%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%BD%D0%B5%D0%B3%D0%BE-%D0%B2-Outlook-com-%D0%B8%D0%BB%D0%B8-Outlook-%D0%B2-%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B5-cff1429c-5af6-41ec-a5b4-74f2c278e98c?omkt=ru-RU&ui=ru-RU&rs=ru-RU&ad=RU)
-- [Telegram канал](https://t.me/webstandards_events)
+
+Также можно подписаться на [канал в Телеграме](https://t.me/webstandards_events).
 
 ## Добавление события
 
