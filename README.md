@@ -4,7 +4,10 @@
 
 Конференции, встречи и другие события по фронтенду во всём мире в одном календаре.
 
-Адрес календаря: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics).
+Адрес календаря:
+
+- iCal: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics) для подписки в календарях.
+- JSON: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics) для удобной работы с данными.
 
 Правки, замечания и идеи по развитию календаря — [в ишьях](https://github.com/web-standards-ru/calendar/issues).
 
