@@ -52,4 +52,4 @@ link: url
 - `npm start` для сборки (как шорткат)
 
 ---
-[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редактор [Вадим Макеев](https://github.com/pepelsbey), разработка [Дмитрий Семиградский](https://github.com/Semigradsky) и [Андрей Волынкин](https://github.com/Avol-V). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
+[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редакторы [Вадим Макеев](https://github.com/pepelsbey), [Юрий Савин](https://github.com/baitun), разработка [Дмитрий Семиградский](https://github.com/Semigradsky) и [Андрей Волынкин](https://github.com/Avol-V). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
