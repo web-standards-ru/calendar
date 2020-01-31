@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/web-standards-ru/calendar.svg?branch=master)](https://travis-ci.org/web-standards-ru/calendar)
 
-Конференции, встречи и другие события по фронтенду во всём мире в одном календаре.
+Конференции, митапы и другие события по фронтенду в одном календаре.
 
 Адрес календаря:
 
