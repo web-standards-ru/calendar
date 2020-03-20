@@ -22,7 +22,7 @@ function prepareEvent(event) {
         uid: event.uid,
         start: event.dateStart,
         end: event.dateEnd,
-        summary: event.name,
+        summary: event.online ? `${event.name} (онлайн)` : event.name,
         location: event.city,
         description: event.link,
     };
