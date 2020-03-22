@@ -6,14 +6,17 @@
     "test": "npm run lint",
     "lint": "yamllint events/*"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
-    "geo-tz": "^3.3.3",
-    "ical-generator": "^0.2.9",
+    "geo-tz": "^5.1.0",
+    "ical-generator": "^1.9.3",
     "js-yaml": "^3.7.0",
     "moment-timezone": "^0.5.13",
     "mutex-js": "^1.1.5",
     "node-geocoder": "^3.22.0",
-    "pify": "^3.0.0",
+    "pify": "^5.0.0",
     "yaml-lint": "^1.2.3"
   }
 }

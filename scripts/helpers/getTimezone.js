@@ -1,7 +1,7 @@
 'use strict';
 
 const NodeGeocoder = require('node-geocoder');
-const GeoTz = require('geo-tz');
+const geoTz = require('geo-tz');
 const Mutex = require('mutex-js');
 const fs = require('fs');
 const path = require('path');
@@ -143,13 +143,13 @@ function prepareGeoData(data) {
  * @throws {Error} Can’t find timezone of the location.
  */
 function findTimezone(data) {
-    const timezone = GeoTz.tz(data.latitude, data.longitude);
+    const timezones = geoTz(data.latitude, data.longitude);
 
-    if (!timezone) {
+    if (timezones.length === 0) {
         throw new Error( 'Can’t find timezone of the location.' );
     }
 
-    return timezone;
+    return timezones[0];
 }
 
 /**
