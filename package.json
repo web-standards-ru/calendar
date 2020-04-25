@@ -11,12 +11,12 @@
   },
   "devDependencies": {
     "geo-tz": "^5.1.0",
-    "ical-generator": "^1.9.3",
-    "js-yaml": "^3.7.0",
-    "moment-timezone": "^0.5.13",
+    "ical-generator": "^1.10.0",
+    "js-yaml": "^3.13.1",
+    "moment-timezone": "^0.5.28",
     "mutex-js": "^1.1.5",
-    "node-geocoder": "^3.22.0",
+    "node-geocoder": "^3.27.0",
     "pify": "^5.0.0",
-    "yaml-lint": "^1.2.3"
+    "yaml-lint": "^1.2.4"
   }
 }
