@@ -4,7 +4,7 @@
     "test": "npm run lint",
     "lint": "yamllint events/*",
     "build": "node scripts/generateCalendar.js",
-    "deploy": "cd dist && rsync --archive --compress --delete calendar.ics calendar.json wst@web-standards.dev:/var/www/web-standards.dev/calendar/"
+    "deploy": "cd dist && rsync --archive --compress --delete calendar.ics calendar.json wst@web-standards.ru:/var/www/web-standards.ru/calendar/"
   },
   "engines": {
     "node": ">=10"
