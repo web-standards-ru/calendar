@@ -1,4 +1,5 @@
 # Календарь событий по фронтенду
+[![](https://github.com/web-standards-ru/calendar/workflows/Lint/badge.svg)](https://github.com/web-standards-ru/calendar/actions?query=workflow%3ALint)
 [![](https://github.com/web-standards-ru/calendar/workflows/Deploy/badge.svg)](https://github.com/web-standards-ru/calendar/actions?query=workflow%3ADeploy)
 
 Конференции, митапы и другие события по фронтенду в одном календаре.
