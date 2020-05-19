@@ -1,8 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "test": "npm run lint",
-    "lint": "yamllint events/*",
+    "test": "yamllint events/*",
     "build": "node scripts/generateCalendar.js",
     "deploy": "cd dist && rsync --archive --compress calendar.ics calendar.json wst@web-standards.ru:/var/www/web-standards.ru/calendar/"
   },
