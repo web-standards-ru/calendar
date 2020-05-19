@@ -1,6 +1,5 @@
 # Календарь событий по фронтенду
-
-[![Build Status](https://travis-ci.org/web-standards-ru/calendar.svg?branch=master)](https://travis-ci.org/web-standards-ru/calendar)
+[![](https://github.com/web-standards-ru/calendar/workflows/Deploy/badge.svg)](https://github.com/web-standards-ru/calendar/actions?query=workflow%3ADeploy)
 
 Конференции, митапы и другие события по фронтенду в одном календаре.
 
@@ -54,4 +53,12 @@ online: true
 - `npm start` для сборки (как шорткат)
 
 ---
-[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редакторы [Вадим Макеев](https://github.com/pepelsbey), [Юрий Савин](https://github.com/baitun), разработка [Дмитрий Семиградский](https://github.com/Semigradsky) и [Андрей Волынкин](https://github.com/Avol-V). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
+[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors),
+редакторы
+[Вадим Макеев](https://github.com/pepelsbey),
+[Юрий Савин](https://github.com/baitun),
+разработка
+[Дмитрий Семиградский](https://github.com/Semigradsky),
+[Андрей Волынкин](https://github.com/Avol-V).
+
+Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
