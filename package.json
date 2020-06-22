@@ -7,9 +7,9 @@
   },
   "devDependencies": {
     "geo-tz": "^6.0.0",
-    "ical-generator": "^1.10.0",
-    "js-yaml": "^3.13.1",
-    "moment-timezone": "^0.5.28",
+    "ical-generator": "^1.11.0",
+    "js-yaml": "^3.14.0",
+    "moment-timezone": "^0.5.31",
     "mutex-js": "^1.1.5",
     "node-geocoder": "^3.27.0",
     "pify": "^5.0.0",
