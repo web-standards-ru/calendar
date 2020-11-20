@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-openssl aes-256-cbc -K $encrypted_04c9eeb4149d_key -iv $encrypted_04c9eeb4149d_iv  -in ${TRAVIS_BUILD_DIR}/.travis/deploy_key.enc -out ${TRAVIS_BUILD_DIR}/.travis/deploy_key -d
-chmod 600 ${TRAVIS_BUILD_DIR}/.travis/deploy_key
-mv ${TRAVIS_BUILD_DIR}/.travis/deploy_key ~/.ssh/id_rsa
-cat ${TRAVIS_BUILD_DIR}/.travis/ssh_config >> ~/.ssh/config

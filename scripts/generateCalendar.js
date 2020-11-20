@@ -22,7 +22,7 @@ function prepareEvent(event) {
         uid: event.uid,
         start: event.dateStart,
         end: event.dateEnd,
-        summary: event.name,
+        summary: event.online ? `${event.name} (онлайн)` : event.name,
         location: event.city,
         description: event.link,
     };
@@ -36,7 +36,9 @@ function prepareEvent(event) {
 
 function generateICalCalendar(events) {
     const cal = ical({
+        description: 'Конференции, митапы и другие события по фронтенду.',
         domain: 'https://web-standards.ru/',
+        name: 'Фронтенд',
         prodId: {
             company: 'web-standards',
             product: 'calendar',

@@ -1,8 +1,8 @@
 # Календарь событий по фронтенду
+[![](https://github.com/web-standards-ru/calendar/workflows/Lint/badge.svg)](https://github.com/web-standards-ru/calendar/actions?query=workflow%3ALint)
+[![](https://github.com/web-standards-ru/calendar/workflows/Deploy/badge.svg)](https://github.com/web-standards-ru/calendar/actions?query=workflow%3ADeploy)
 
-[![Build Status](https://travis-ci.org/web-standards-ru/calendar.svg?branch=master)](https://travis-ci.org/web-standards-ru/calendar)
-
-Конференции, встречи и другие события по фронтенду во всём мире в одном календаре.
+Конференции, митапы и другие события по фронтенду в одном календаре.
 
 Адрес календаря:
 
@@ -37,15 +37,16 @@ date: dd.mm.yyyy
 time: hh:mm-hh:mm
 city: city
 link: url
+online: true
 ```
 
-- Если событие многодневное, добавьте дату завершения через дефис `dd.mm.yyyy-dd.mm.yyyy`.
-- Для коротких событий на несколько часов, укажите время начала и конца.
-- Если событие заканчивается в полночь, укажите время 23:59.
-- Если время окончания неизвестно, напишите примерное.
-- Названия городов записывайте кириллицей.
+- Многодневное событие? Добавьте дату завершения через дефис `dd.mm.yyyy-dd.mm.yyyy`.
+- Короткое событие на несколько часов? Укажите время начала и конца, даже примерное: `time: hh:mm-hh:mm`.
+- Заканчиваете в полночь? Укажите время `23:59`, чтобы не перейти на следующий день.
+- Проводится онлайн? Добавьте `online: true`, это добавит подпись «онлайн» в название.
+- Всегда добавляйте город (кириллицей), это помогает с часовым поясом события.
 - Названия или ссылки с `#` указывайте в кавычках `'Событие #1'`.
-- Название событий указывайте без года.
+- Не добавляйте в название события то, что уже есть в других полях: год, месяц, город.
 
 ## Сборка событий
 
@@ -53,4 +54,12 @@ link: url
 - `npm start` для сборки (как шорткат)
 
 ---
-[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors), редакторы [Вадим Макеев](https://github.com/pepelsbey), [Юрий Савин](https://github.com/baitun), разработка [Дмитрий Семиградский](https://github.com/Semigradsky) и [Андрей Волынкин](https://github.com/Avol-V). Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).
+[Авторы](https://github.com/web-standards-ru/calendar/graphs/contributors),
+редакторы
+[Вадим Макеев](https://github.com/pepelsbey),
+[Юрий Савин](https://github.com/baitun),
+разработка
+[Дмитрий Семиградский](https://github.com/Semigradsky),
+[Андрей Волынкин](https://github.com/Avol-V).
+
+Распространяется по лицензии [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru).

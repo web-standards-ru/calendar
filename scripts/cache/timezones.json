@@ -39,5 +39,17 @@
     "Лимассол": "Asia/Nicosia",
     "Днепр": "Europe/Kiev",
     "Нур-Султан": "Asia/Almaty",
-    "Барселона": "Europe/Madrid"
+    "Барселона": "Europe/Madrid",
+    "Кишинев": "Europe/Chisinau",
+    "Кишинёв": "Europe/Chisinau",
+    "Moscow": "Europe/Moscow",
+    "Житомир": "Europe/Kiev",
+    "Могилев": "Asia/Novosibirsk",
+    "Берлин": "Europe/Berlin",
+    "Саратов": "Europe/Saratov",
+    "Алма-Ата": "Asia/Almaty",
+    "Ташкент": "Asia/Tashkent",
+    "Иннополис": "Europe/Moscow",
+    "Уилмингтон": "America/New_York",
+    "Прага": "Europe/Prague"
 }
