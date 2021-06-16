@@ -99,7 +99,7 @@ function parseDate(dateStr, timeStr, city) {
  * @param {string} content Event file content.
  */
 function parseEvent(content) {
-    const data = unescapeYamlNumberSign(yaml.safeLoad(content));
+    const data = unescapeYamlNumberSign(yaml.load(content));
     const assignData = (dateData) => Object.assign(
         data,
         dateData
