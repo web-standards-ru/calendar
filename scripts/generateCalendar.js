@@ -47,7 +47,7 @@ function generateICalCalendar(events) {
         events: events
     });
 
-    return writeFile(PATH_ICAL_CALENDAR, cal);
+    return writeFile(PATH_ICAL_CALENDAR, cal.toString());
 }
 
 function generateJSONCalendar(events) {
