@@ -6,8 +6,8 @@
 
 Адрес календаря:
 
-- iCal: [web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics) для подписки в календарях.
-- JSON: [web-standards.ru/calendar.json](https://web-standards.ru/calendar.json) для удобной работы с данными.
+- iCal: [https://web-standards.ru/calendar.ics](https://web-standards.ru/calendar.ics) для подписки в календарях.
+- JSON: [https://web-standards.ru/calendar.json](https://web-standards.ru/calendar.json) для удобной работы с данными.
 
 Правки, замечания и идеи по развитию календаря — [в ишьях](https://github.com/web-standards-ru/calendar/issues).
 
