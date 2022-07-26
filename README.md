@@ -23,7 +23,7 @@
 1. Создайте в папке [events](https://github.com/web-standards-ru/calendar/tree/master/events) файл `yyyy-mm-dd-event-name.yml`.
 2. Отправьте пулреквест, открытый к правкам (галочка _allow edits from maintainers_).
 
-- Файл можно создать прямо на Гитхабе: [create new file](https://github.com/web-standards-ru/calendar/new/master/events) и дальше в пулреквест.
+- Файл можно создать прямо на Гитхабе: [create new file](https://github.com/web-standards-ru/calendar/new/main/events) и дальше в пулреквест.
 - Название файла укажите латиницей, строчными и с дефисами вместо пробелов.
 - Если событие длится больше одного дня, в названии файла укажите первый.
 
